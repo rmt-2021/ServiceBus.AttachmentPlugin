@@ -46,7 +46,7 @@
             try
             {
                 // Will only work for Shared Key or Account SAS. For Container SAS will throw an exception.
-                if (! await container.ExistsAsync().ConfigureAwait(false)) 
+                if (! await container.ExistsAsync().ConfigureAwait(false))
                 {
                     await container.CreateIfNotExistsAsync().ConfigureAwait(false);
                 }
